@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: rgb(16, 184, 114);
+}
+.container {
+  height: 50vh;
+  width: 60%;
+  margin: 150px auto;
+  background: rgb(10, 1, 1);
+  border-radius: 30px;
+}
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 30px 20px;
+}
+form .title {
+  font-style: italic;
+  padding-top: 20px;
+}
+form .form-box .block {
+  margin: 10px auto;
+}
+form input {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 5px auto;
+  color: #fff;
+}
+form .option {
+  height: 35px;
+}
+form button {
+  width: 35%;
+  padding: 5px;
+  background: rgb(16, 184, 114);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+  color: #fff;
+}
+hr {
+  width: 1px;
+  height: 20px;
+}
+/* .title .hr {
+  width: 2px;
+  height: 80px;
+  background: silver;
+  position: absolute;
+  left: 27%;
+  top: 39%;
+  background: rgb(16, 184, 114);
+} */
+p {
+  color: white;
+  /* position: absolute;
+  top: 65%;
+  left: 35%; */
+  font-family: cursive;
+  font-style: italic;
+  margin-left: 120px;
+}
+
+form h1 {
+  /* color: rgb(16, 184, 114); */
+  position: relative;
+  -webkit-text-stroke: 0.3vw #363d52;
+  color: #252839;
+}
+
+h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke: 0vw #363d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
